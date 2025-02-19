@@ -120,6 +120,8 @@ Codigo del diagrama:
         Reserva "*" -- "1" Huesped : pertenece a
         Reserva "1" -- "1" Fecha : tiene
 
+![Diagrama UML - Hotel](https://github.com/POO20251C/analisis-dise-o-objetos-AndresDiaz03/blob/master/Untitled%20diagram-2025-02-19-164516.png)
+
 
 **Caso 3: Caso Tienda de Mascotas**
 
@@ -157,6 +159,7 @@ Codigo del diagrama:
         Cita "1" -- "1" Mascota : corresponde a
         Cita "1" -- "1" Dueno : pertenece a
 
+![Diagrama UML - Hotel](https://github.com/POO20251C/analisis-dise-o-objetos-AndresDiaz03/blob/master/Untitled%20diagram-2025-02-19-164747.png)
 
 **Caso 4: Caso Tienda de Música**
 
