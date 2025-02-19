@@ -11,54 +11,50 @@ Integrantes del Equipo: Andres Felipe Diaz
 
 Codigo del diagrama:
 
-# Diagrama UML - Biblioteca 📚
+    classDiagram
+        class Libro {
+            -string titulo
+            -string isbn
+            -int anioPublicacion
+            +getTitulo()
+            +getISBN()
+            +getAnioPublicacion()
+        }
 
-Este diagrama representa el modelo UML para el sistema de gestión de una biblioteca.
+        class Lector {
+            -string nombre
+            -string numeroSocio
+            -Fecha fechaRegistro
+            +realizarPrestamo()
+            +devolverLibro()
+            +getNombre()
+            +getNumeroSocio()
+        }
 
-```mermaid
-classDiagram
-    class Libro {
-        -string titulo
-        -string isbn
-        -int anioPublicacion
-        +getTitulo()
-        +getISBN()
-        +getAnioPublicacion()
-    }
+        class Prestamo {
+            -Fecha fechaPrestamo
+            -Fecha fechaDevolucion
+            -boolean estado
+            -Libro libro
+            -Lector lector
+            +actualizarEstado()
+            +getFechaPrestamo()
+            +getFechaDevolucion()
+        }
 
-    class Lector {
-        -string nombre
-        -string numeroSocio
-        -Fecha fechaRegistro
-        +realizarPrestamo()
-        +devolverLibro()
-        +getNombre()
-        +getNumeroSocio()
-    }
+        class Fecha {
+            -int dia
+            -int mes
+            -int anio
+            +getFecha()
+        }
 
-    class Prestamo {
-        -Fecha fechaPrestamo
-        -Fecha fechaDevolucion
-        -boolean estado
-        -Libro libro
-        -Lector lector
-        +actualizarEstado()
-        +getFechaPrestamo()
-        +getFechaDevolucion()
-    }
+        Libro "1" o-- "*" Prestamo : es prestado en
+        Lector "1" o-- "*" Prestamo : realiza
+        Prestamo "1" -- "1" Libro : asocia
+        Prestamo "1" -- "1" Lector : pertenece a
+        Prestamo "1" -- "1" Fecha : tiene fecha de
 
-    class Fecha {
-        -int dia
-        -int mes
-        -int anio
-        +getFecha()
-    }
-
-    Libro "1" o-- "*" Prestamo : es prestado en
-    Lector "1" o-- "*" Prestamo : realiza
-    Prestamo "1" -- "1" Libro : asocia
-    Prestamo "1" -- "1" Lector : pertenece a
-    Prestamo "1" -- "1" Fecha : tiene fecha de
 
 **Caso 2: Caso Hotel**
 
