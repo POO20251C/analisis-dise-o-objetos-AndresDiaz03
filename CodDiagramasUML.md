@@ -54,6 +54,7 @@ Codigo del diagrama:
         Prestamo "1" -- "1" Lector : pertenece a
         Prestamo "1" -- "1" Fecha : tiene fecha de
 
+	![Diagrama UML]("C:\Users\andre\repos_poo\Tareas\analisis-dise-o-objetos-AndresDiaz03\mermaid-diagram-2025-02-19-160446.svg")
 
 **Caso 2: Caso Hotel**
 
