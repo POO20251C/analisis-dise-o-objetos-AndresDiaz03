@@ -8,6 +8,8 @@ En este archivo se encuentra cada uno de los códigos correspondientes al Diagra
 
 **Caso 1: Caso Biblioteca**
 
+Codigo del diagrama:
+
 classDiagram
     class Libro {
         -string titulo
@@ -54,6 +56,8 @@ classDiagram
 
 
 **Caso 2: Caso Hotel**
+
+Codigo del diagrama:
 
 classDiagram
     class Persona {
@@ -115,6 +119,8 @@ classDiagram
 
 **Caso 3: Caso Tienda de Mascotas**
 
+Codigo del diagrama:
+
 classDiagram
     class Persona {
         -string nombre
@@ -149,6 +155,8 @@ classDiagram
 
 
 **Caso 4: Caso Tienda de Música**
+
+Codigo del diagrama:
 
 classDiagram
     class Persona {
@@ -191,6 +199,8 @@ classDiagram
 
 **Caso 5: Caso Escuela de Música**
 
+Codigo del diagrama:
+
 classDiagram
     class Persona {
         -string nombre
@@ -231,6 +241,8 @@ classDiagram
 
 
 **Caso 6: Caso Galería de Arte**
+
+Codigo del diagrama:
 
 classDiagram
     class Galeria {
