@@ -56,6 +56,10 @@ Codigo del diagrama:
         Prestamo "1" -- "1" Fecha : tiene fecha de
 
 
+```md
+![Diagrama UML - Biblioteca]("C:\Users\andre\Downloads\Untitled diagram-2025-02-19-162609.png")
+
+
 **Caso 2: Caso Hotel**
 
 Codigo del diagrama:
