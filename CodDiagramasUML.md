@@ -10,49 +10,49 @@ En este archivo se encuentra cada uno de los códigos correspondientes al Diagra
 
 Codigo del diagrama:
 
-classDiagram
-    class Libro {
-        -string titulo
-        -string isbn
-        -int anioPublicacion
-        +getTitulo()
-        +getISBN()
-        +getAnioPublicacion()
-    }
+    classDiagram
+        class Libro {
+            -string titulo
+            -string isbn
+            -int anioPublicacion
+            +getTitulo()
+            +getISBN()
+            +getAnioPublicacion()
+        }
 
-    class Lector {
-        -string nombre
-        -string numeroSocio
-        -Fecha fechaRegistro
-        +realizarPrestamo()
-        +devolverLibro()
-        +getNombre()
-        +getNumeroSocio()
-    }
+        class Lector {
+            -string nombre
+            -string numeroSocio
+            -Fecha fechaRegistro
+            +realizarPrestamo()
+            +devolverLibro()
+            +getNombre()
+            +getNumeroSocio()
+        }
 
-    class Prestamo {
-        -Fecha fechaPrestamo
-        -Fecha fechaDevolucion
-        -boolean estado
-        -Libro libro
-        -Lector lector
-        +actualizarEstado()
-        +getFechaPrestamo()
-        +getFechaDevolucion()
-    }
+        class Prestamo {
+            -Fecha fechaPrestamo
+            -Fecha fechaDevolucion
+            -boolean estado
+            -Libro libro
+            -Lector lector
+            +actualizarEstado()
+            +getFechaPrestamo()
+            +getFechaDevolucion()
+        }
 
-    class Fecha {
-        -int dia
-        -int mes
-        -int anio
-        +getFecha()
-    }
+        class Fecha {
+            -int dia
+            -int mes
+            -int anio
+            +getFecha()
+        }
 
-    Libro "1" o-- "*" Prestamo : es prestado en
-    Lector "1" o-- "*" Prestamo : realiza
-    Prestamo "1" -- "1" Libro : asocia
-    Prestamo "1" -- "1" Lector : pertenece a
-    Prestamo "1" -- "1" Fecha : tiene fecha de
+        Libro "1" o-- "*" Prestamo : es prestado en
+        Lector "1" o-- "*" Prestamo : realiza
+        Prestamo "1" -- "1" Libro : asocia
+        Prestamo "1" -- "1" Lector : pertenece a
+        Prestamo "1" -- "1" Fecha : tiene fecha de
 
 
 **Caso 2: Caso Hotel**
