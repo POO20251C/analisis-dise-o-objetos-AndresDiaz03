@@ -1,5 +1,11 @@
 # Codigos de Diagramas UML de todos los diferentes casos:
 
+## Solución de cada caso
+
+En este archivo se encuentra cada uno de los códigos correspondientes al Diagrama UML que se elaboro en Mermaid, todos los casos están resueltos y bien detallados.
+
+
+
 **Caso 1: Caso Biblioteca**
 
 classDiagram
@@ -7,22 +13,44 @@ classDiagram
         -string titulo
         -string isbn
         -int anioPublicacion
+        +getTitulo()
+        +getISBN()
+        +getAnioPublicacion()
     }
+
     class Lector {
         -string nombre
         -string numeroSocio
-        -string fechaRegistro
+        -Fecha fechaRegistro
         +realizarPrestamo()
+        +devolverLibro()
+        +getNombre()
+        +getNumeroSocio()
     }
+
     class Prestamo {
-        -string fechaPrestamo
-        -string fechaDevolucion
+        -Fecha fechaPrestamo
+        -Fecha fechaDevolucion
+        -boolean estado
+        -Libro libro
+        -Lector lector
         +actualizarEstado()
+        +getFechaPrestamo()
+        +getFechaDevolucion()
     }
-    Libro "1" o-- "*" Prestamo : es prestado
+
+    class Fecha {
+        -int dia
+        -int mes
+        -int anio
+        +getFecha()
+    }
+
+    Libro "1" o-- "*" Prestamo : es prestado en
     Lector "1" o-- "*" Prestamo : realiza
-    Prestamo "*" -- "1" Libro : asocia
-    Prestamo "*" -- "1" Lector : pertenece a
+    Prestamo "1" -- "1" Libro : asocia
+    Prestamo "1" -- "1" Lector : pertenece a
+    Prestamo "1" -- "1" Fecha : tiene fecha de
 
 
 **Caso 2: Caso Hotel**
