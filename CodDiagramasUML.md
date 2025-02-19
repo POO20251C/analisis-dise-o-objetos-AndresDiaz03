@@ -159,7 +159,7 @@ Codigo del diagrama:
         Cita "1" -- "1" Mascota : corresponde a
         Cita "1" -- "1" Dueno : pertenece a
 
-![Diagrama UML - Hotel](https://github.com/POO20251C/analisis-dise-o-objetos-AndresDiaz03/blob/master/Untitled%20diagram-2025-02-19-164747.png)
+![Diagrama UML - Mascotas](https://github.com/POO20251C/analisis-dise-o-objetos-AndresDiaz03/blob/master/Untitled%20diagram-2025-02-19-164747.png)
 
 **Caso 4: Caso Tienda de Música**
 
@@ -203,6 +203,7 @@ Codigo del diagrama:
         Cliente "1" -- "1" Fecha : tiene
         Compra "1" -- "1" Fecha : ocurre en
 
+![Diagrama UML - Musica](https://github.com/POO20251C/analisis-dise-o-objetos-AndresDiaz03/blob/master/Untitled%20diagram-2025-02-19-165354.png)
 
 **Caso 5: Caso Escuela de Música**
 
@@ -246,6 +247,7 @@ Codigo del diagrama:
         Estudiante "1" -- "1" Fecha : tiene
         Inscripcion "1" -- "1" Fecha : ocurre en
 
+![Diagrama UML - Escuela](https://github.com/POO20251C/analisis-dise-o-objetos-AndresDiaz03/commit/284279d468fb443b5c2fc3be968bb837616dd968)
 
 **Caso 6: Caso Galería de Arte**
 
@@ -306,4 +308,4 @@ Codigo del diagrama:
         Artista "1" -- "1" Fecha : registra en
         Obra "1" -- "1" Fecha : creada en
 
-
+![Diagrama UML - Galeria](https://github.com/POO20251C/analisis-dise-o-objetos-AndresDiaz03/commit/67a90dd791d84f606cd4ddcd123c647045987e05)
